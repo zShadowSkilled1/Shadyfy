@@ -22,20 +22,23 @@ local SF = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local Language = Instance.new("TextButton")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
 local UICorner_6 = Instance.new("UICorner")
 local LanguageFrame = Instance.new("Frame")
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local UICorner_7 = Instance.new("UICorner")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local English = Instance.new("TextButton")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local French = Instance.new("TextButton")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local Notif = Instance.new("Frame")
 local Ttitle = Instance.new("TextLabel")
 local UICorner_8 = Instance.new("UICorner")
-local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
 local Description = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
 local UICorner_10 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
@@ -114,7 +117,7 @@ Settings.Name = "Settings"
 Settings.Parent = Main
 Settings.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 Settings.Position = UDim2.new(0.300248146, 0, 1.090909, 0)
-Settings.Size = UDim2.new(0, 147, 0, 31)
+Settings.Size = UDim2.new(0.364764273, 0, 0.352272689, 0)
 Settings.Font = Enum.Font.FredokaOne
 Settings.Text = "Settings"
 Settings.TextColor3 = Color3.fromRGB(162, 162, 162)
@@ -131,21 +134,21 @@ SF.Name = "SF"
 SF.Parent = Main
 SF.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 SF.Position = UDim2.new(0, 0, -4.68181801, 0)
-SF.Size = UDim2.new(0, 403, 0, 394)
+SF.Size = UDim2.new(1, 0, 4.47727251, 0)
 SF.Visible = false
 
 ScrollingFrame.Parent = SF
 ScrollingFrame.Active = true
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 ScrollingFrame.Position = UDim2.new(0.0148883378, 0, 0.0253807101, 0)
-ScrollingFrame.Size = UDim2.new(0, 391, 0, 378)
+ScrollingFrame.Size = UDim2.new(0.970223308, 0, 0.959390879, 0)
 
 Language.Name = "Language"
 Language.Parent = ScrollingFrame
 Language.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Language.BackgroundTransparency = 1.000
 Language.Position = UDim2.new(0.0447411686, 0, 0.0190355293, 0)
-Language.Size = UDim2.new(0, 356, 0, 34)
+Language.Size = UDim2.new(0.910485923, 0, 0.0899470896, 0)
 Language.Font = Enum.Font.FredokaOne
 Language.Text = "Language"
 Language.TextColor3 = Color3.fromRGB(147, 147, 147)
@@ -153,8 +156,11 @@ Language.TextScaled = true
 Language.TextSize = 14.000
 Language.TextWrapped = true
 
-UITextSizeConstraint_5.Parent = SF
-UITextSizeConstraint_5.MaxTextSize = 27
+UITextSizeConstraint_5.Parent = Language
+UITextSizeConstraint_5.MaxTextSize = 70
+
+UITextSizeConstraint_6.Parent = SF
+UITextSizeConstraint_6.MaxTextSize = 27
 
 UICorner_6.Parent = SF
 
@@ -162,11 +168,11 @@ LanguageFrame.Name = "LanguageFrame"
 LanguageFrame.Parent = Main
 LanguageFrame.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 LanguageFrame.Position = UDim2.new(1.04714644, 0, -4.69318151, 0)
-LanguageFrame.Size = UDim2.new(0, 321, 0, 394)
+LanguageFrame.Size = UDim2.new(0.796526074, 0, 4.47727251, 0)
 LanguageFrame.Visible = false
 
-UITextSizeConstraint_6.Parent = LanguageFrame
-UITextSizeConstraint_6.MaxTextSize = 27
+UITextSizeConstraint_7.Parent = LanguageFrame
+UITextSizeConstraint_7.MaxTextSize = 27
 
 UICorner_7.Parent = LanguageFrame
 
@@ -174,14 +180,14 @@ ScrollingFrame_2.Parent = LanguageFrame
 ScrollingFrame_2.Active = true
 ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
 ScrollingFrame_2.Position = UDim2.new(0.0560747646, 0, 0.0279187039, 0)
-ScrollingFrame_2.Size = UDim2.new(0, 290, 0, 371)
+ScrollingFrame_2.Size = UDim2.new(0.903426766, 0, 0.941624343, 0)
 
 English.Name = "English"
 English.Parent = ScrollingFrame_2
 English.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 English.BackgroundTransparency = 1.000
 English.Position = UDim2.new(0.0988277644, 0, 0.0114213191, 0)
-English.Size = UDim2.new(0, 226, 0, 27)
+English.Size = UDim2.new(0.779310346, 0, 0.0727762803, 0)
 English.Font = Enum.Font.FredokaOne
 English.Text = "English"
 English.TextColor3 = Color3.fromRGB(147, 147, 147)
@@ -189,18 +195,24 @@ English.TextScaled = true
 English.TextSize = 14.000
 English.TextWrapped = true
 
+UITextSizeConstraint_8.Parent = English
+UITextSizeConstraint_8.MaxTextSize = 57
+
 French.Name = "French"
 French.Parent = ScrollingFrame_2
 French.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 French.BackgroundTransparency = 1.000
 French.Position = UDim2.new(0.0988277644, 0, 0.0621827394, 0)
-French.Size = UDim2.new(0, 226, 0, 27)
+French.Size = UDim2.new(0.779310346, 0, 0.0727762803, 0)
 French.Font = Enum.Font.FredokaOne
 French.Text = "French"
 French.TextColor3 = Color3.fromRGB(147, 147, 147)
 French.TextScaled = true
 French.TextSize = 14.000
 French.TextWrapped = true
+
+UITextSizeConstraint_9.Parent = French
+UITextSizeConstraint_9.MaxTextSize = 57
 
 Notif.Name = "Notif"
 Notif.Parent = ScreenGui
@@ -223,8 +235,8 @@ Ttitle.TextWrapped = true
 
 UICorner_8.Parent = Ttitle
 
-UITextSizeConstraint_7.Parent = Ttitle
-UITextSizeConstraint_7.MaxTextSize = 20
+UITextSizeConstraint_10.Parent = Ttitle
+UITextSizeConstraint_10.MaxTextSize = 20
 
 Description.Name = "Description"
 Description.Parent = Notif
@@ -241,8 +253,8 @@ Description.TextWrapped = true
 
 UICorner_9.Parent = Description
 
-UITextSizeConstraint_8.Parent = Description
-UITextSizeConstraint_8.MaxTextSize = 14
+UITextSizeConstraint_11.Parent = Description
+UITextSizeConstraint_11.MaxTextSize = 14
 
 UICorner_10.Parent = Notif
 
@@ -251,7 +263,7 @@ UIAspectRatioConstraint.AspectRatio = 1.875
 
 -- Scripts:
 
-local function RBTJBI_fake_script() -- Main.MainScript 
+local function UVIBUTR_fake_script() -- Main.MainScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local playing = false
@@ -320,8 +332,8 @@ local function RBTJBI_fake_script() -- Main.MainScript
 		end
 	end)
 end
-coroutine.wrap(RBTJBI_fake_script)()
-local function WAUXGT_fake_script() -- Main.DragScript 
+coroutine.wrap(UVIBUTR_fake_script)()
+local function FVNN_fake_script() -- Main.DragScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -360,8 +372,8 @@ local function WAUXGT_fake_script() -- Main.DragScript
 	end)
 	
 end
-coroutine.wrap(WAUXGT_fake_script)()
-local function IBMUT_fake_script() -- Main.Keybind 
+coroutine.wrap(FVNN_fake_script)()
+local function IMOO_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local frame = script.Parent
@@ -393,8 +405,8 @@ local function IBMUT_fake_script() -- Main.Keybind
 	end)
 	
 end
-coroutine.wrap(IBMUT_fake_script)()
-local function HWMAC_fake_script() -- Main.MainScript2 
+coroutine.wrap(IMOO_fake_script)()
+local function HHIE_fake_script() -- Main.MainScript2 
 	local script = Instance.new('LocalScript', Main)
 
 	local customdir = ("Shadyfy/")
@@ -414,21 +426,28 @@ local function HWMAC_fake_script() -- Main.MainScript2
 		script.Parent.Play.Text = "Jouer"
 		script.Parent.Parent.Notif.Ttitle.Text = "Chargement Terminé"
 		script.Parent.Parent.Notif.Description.Text = "Appuyez Sur ControlDroit Pour Ouvrir L'Interface."
+		script.Parent.LanguageFrame.ScrollingFrame.English.Text = "Anglais"
+		script.Parent.LanguageFrame.ScrollingFrame.French.Text = "Français"
+		script.Parent.SF.ScrollingFrame.Language.Text = "Language"
+		script.Parent.Settings.Text = "Réglages"
+		script.Parent.SID.PlaceholderText = "ID ICI"
 	end
 	
 	script.Parent.LanguageFrame.ScrollingFrame.English.MouseButton1Down:Connect(function()
 		writefile("Shadyfy/language.dat", "en-us")
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zShadowSkilled1/Shadyfy/main/Shadyfy.lua", true))()
+		game.Lighting.Blur:Destroy()
 		script.Parent.Parent.Main:Destroy()
 	end)
 	script.Parent.LanguageFrame.ScrollingFrame.French.MouseButton1Down:Connect(function()
 		writefile("Shadyfy/language.dat", "fr-fr")
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/zShadowSkilled1/Shadyfy/main/Shadyfy.lua", true))()
+		game.Lighting.Blur:Destroy()
 		script.Parent.Parent.Main:Destroy()
 	end)
 end
-coroutine.wrap(HWMAC_fake_script)()
-local function LEYXPP_fake_script() -- Notif.LocalScript 
+coroutine.wrap(HHIE_fake_script)()
+local function XAZDPK_fake_script() -- Notif.LocalScript 
 	local script = Instance.new('LocalScript', Notif)
 
 	wait(1)
@@ -475,8 +494,8 @@ local function LEYXPP_fake_script() -- Notif.LocalScript
 	script.Parent.Visible = false
 	
 end
-coroutine.wrap(LEYXPP_fake_script)()
-local function XERZFU_fake_script() -- Notif.DragScript 
+coroutine.wrap(XAZDPK_fake_script)()
+local function KKCWAHP_fake_script() -- Notif.DragScript 
 	local script = Instance.new('LocalScript', Notif)
 
 	local UIS = game:GetService('UserInputService')
@@ -515,4 +534,4 @@ local function XERZFU_fake_script() -- Notif.DragScript
 	end)
 	
 end
-coroutine.wrap(XERZFU_fake_script)()
+coroutine.wrap(KKCWAHP_fake_script)()
