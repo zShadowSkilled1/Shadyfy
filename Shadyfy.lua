@@ -22,24 +22,41 @@ local SF = Instance.new("Frame")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local Language = Instance.new("TextButton")
 local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local SaveSong = Instance.new("TextButton")
 local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
 local UICorner_6 = Instance.new("UICorner")
 local LanguageFrame = Instance.new("Frame")
-local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local UICorner_7 = Instance.new("UICorner")
 local ScrollingFrame_2 = Instance.new("ScrollingFrame")
 local English = Instance.new("TextButton")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
-local French = Instance.new("TextButton")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local French = Instance.new("TextButton")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local Spanish = Instance.new("TextButton")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local SS = Instance.new("Frame")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local UICorner_8 = Instance.new("UICorner")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local STID = Instance.new("TextBox")
+local UICorner_9 = Instance.new("UICorner")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local SN = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local TimeText = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
 local Notif = Instance.new("Frame")
 local Ttitle = Instance.new("TextLabel")
-local UICorner_8 = Instance.new("UICorner")
-local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local UICorner_12 = Instance.new("UICorner")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
 local Description = Instance.new("TextLabel")
-local UICorner_9 = Instance.new("UICorner")
-local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local UICorner_14 = Instance.new("UICorner")
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
@@ -50,6 +67,7 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Main.LayoutOrder = 237238632
 Main.Position = UDim2.new(0.333333343, 0, 0.777243614, 0)
 Main.Size = UDim2.new(0.344444454, 0, 0.141025648, 0)
 Main.Visible = false
@@ -148,7 +166,7 @@ Language.Parent = ScrollingFrame
 Language.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Language.BackgroundTransparency = 1.000
 Language.Position = UDim2.new(0.0447411686, 0, 0.0190355293, 0)
-Language.Size = UDim2.new(0.910485923, 0, 0.0899470896, 0)
+Language.Size = UDim2.new(0.910485923, 0, 0.187508747, 0)
 Language.Font = Enum.Font.FredokaOne
 Language.Text = "Language"
 Language.TextColor3 = Color3.fromRGB(147, 147, 147)
@@ -159,8 +177,25 @@ Language.TextWrapped = true
 UITextSizeConstraint_5.Parent = Language
 UITextSizeConstraint_5.MaxTextSize = 70
 
-UITextSizeConstraint_6.Parent = SF
-UITextSizeConstraint_6.MaxTextSize = 27
+SaveSong.Name = "Save Song"
+SaveSong.Parent = ScrollingFrame
+SaveSong.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SaveSong.BackgroundTransparency = 1.000
+SaveSong.Position = UDim2.new(0.0447411686, 0, 0.131979689, 0)
+SaveSong.Size = UDim2.new(0.910485923, 0, 0.187508747, 0)
+SaveSong.Visible = false
+SaveSong.Font = Enum.Font.FredokaOne
+SaveSong.Text = "Save Song"
+SaveSong.TextColor3 = Color3.fromRGB(147, 147, 147)
+SaveSong.TextScaled = true
+SaveSong.TextSize = 14.000
+SaveSong.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = SaveSong
+UITextSizeConstraint_6.MaxTextSize = 70
+
+UITextSizeConstraint_7.Parent = SF
+UITextSizeConstraint_7.MaxTextSize = 27
 
 UICorner_6.Parent = SF
 
@@ -171,8 +206,8 @@ LanguageFrame.Position = UDim2.new(1.04714644, 0, -4.69318151, 0)
 LanguageFrame.Size = UDim2.new(0.796526074, 0, 4.47727251, 0)
 LanguageFrame.Visible = false
 
-UITextSizeConstraint_7.Parent = LanguageFrame
-UITextSizeConstraint_7.MaxTextSize = 27
+UITextSizeConstraint_8.Parent = LanguageFrame
+UITextSizeConstraint_8.MaxTextSize = 27
 
 UICorner_7.Parent = LanguageFrame
 
@@ -187,7 +222,7 @@ English.Parent = ScrollingFrame_2
 English.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 English.BackgroundTransparency = 1.000
 English.Position = UDim2.new(0.0988277644, 0, 0.0114213191, 0)
-English.Size = UDim2.new(0.779310346, 0, 0.0727762803, 0)
+English.Size = UDim2.new(0.779310346, 0, 0.154576033, 0)
 English.Font = Enum.Font.FredokaOne
 English.Text = "English"
 English.TextColor3 = Color3.fromRGB(147, 147, 147)
@@ -195,15 +230,15 @@ English.TextScaled = true
 English.TextSize = 14.000
 English.TextWrapped = true
 
-UITextSizeConstraint_8.Parent = English
-UITextSizeConstraint_8.MaxTextSize = 57
+UITextSizeConstraint_9.Parent = English
+UITextSizeConstraint_9.MaxTextSize = 57
 
 French.Name = "French"
 French.Parent = ScrollingFrame_2
 French.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 French.BackgroundTransparency = 1.000
-French.Position = UDim2.new(0.0988277644, 0, 0.0621827394, 0)
-French.Size = UDim2.new(0.779310346, 0, 0.0727762803, 0)
+French.Position = UDim2.new(0.0988277644, 0, 0.0943848044, 0)
+French.Size = UDim2.new(0.779310346, 0, 0.154576033, 0)
 French.Font = Enum.Font.FredokaOne
 French.Text = "French"
 French.TextColor3 = Color3.fromRGB(147, 147, 147)
@@ -211,12 +246,110 @@ French.TextScaled = true
 French.TextSize = 14.000
 French.TextWrapped = true
 
-UITextSizeConstraint_9.Parent = French
-UITextSizeConstraint_9.MaxTextSize = 57
+UITextSizeConstraint_10.Parent = French
+UITextSizeConstraint_10.MaxTextSize = 57
+
+Spanish.Name = "Spanish"
+Spanish.Parent = ScrollingFrame_2
+Spanish.AnchorPoint = Vector2.new(0.5, 0.5)
+Spanish.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spanish.BackgroundTransparency = 1.000
+Spanish.BorderSizePixel = 0
+Spanish.Position = UDim2.new(0.486206889, 0, 0.252649337, 0)
+Spanish.Size = UDim2.new(0.623052955, 0, 0.133544773, 0)
+Spanish.Font = Enum.Font.FredokaOne
+Spanish.Text = "Spanish"
+Spanish.TextColor3 = Color3.fromRGB(147, 147, 147)
+Spanish.TextScaled = true
+Spanish.TextSize = 14.000
+Spanish.TextWrapped = true
+
+UITextSizeConstraint_11.Parent = Spanish
+UITextSizeConstraint_11.MaxTextSize = 57
+
+SS.Name = "SS"
+SS.Parent = Main
+SS.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+SS.Position = UDim2.new(1.04714644, 0, -4.69318151, 0)
+SS.Size = UDim2.new(0.796526074, 0, 4.47727251, 0)
+SS.Visible = false
+
+UITextSizeConstraint_12.Parent = SS
+UITextSizeConstraint_12.MaxTextSize = 27
+
+UICorner_8.Parent = SS
+
+ScrollingFrame_3.Parent = SS
+ScrollingFrame_3.Active = true
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+ScrollingFrame_3.Position = UDim2.new(0.0560747646, 0, 0.0279187039, 0)
+ScrollingFrame_3.Size = UDim2.new(0.903426766, 0, 0.941624343, 0)
+
+STID.Name = "STID"
+STID.Parent = SS
+STID.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+STID.Position = UDim2.new(0.0983472243, 0, 0.063098222, 0)
+STID.Selectable = false
+STID.Size = UDim2.new(0.798883736, 0, 0.127301112, 0)
+STID.ClearTextOnFocus = false
+STID.Font = Enum.Font.FredokaOne
+STID.PlaceholderColor3 = Color3.fromRGB(106, 106, 106)
+STID.PlaceholderText = "SONG ID"
+STID.Text = ""
+STID.TextColor3 = Color3.fromRGB(0, 0, 0)
+STID.TextScaled = true
+STID.TextSize = 14.000
+STID.TextWrapped = true
+
+UICorner_9.Parent = STID
+
+UITextSizeConstraint_13.Parent = STID
+UITextSizeConstraint_13.MaxTextSize = 72
+
+SN.Name = "SN"
+SN.Parent = SS
+SN.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+SN.Position = UDim2.new(0.0983472243, 0, 0.244600788, 0)
+SN.Selectable = false
+SN.Size = UDim2.new(0.798883736, 0, 0.127301112, 0)
+SN.ClearTextOnFocus = false
+SN.Font = Enum.Font.FredokaOne
+SN.PlaceholderColor3 = Color3.fromRGB(106, 106, 106)
+SN.PlaceholderText = "NAME TO SAVE AS"
+SN.Text = ""
+SN.TextColor3 = Color3.fromRGB(0, 0, 0)
+SN.TextScaled = true
+SN.TextSize = 14.000
+SN.TextWrapped = true
+
+UICorner_10.Parent = SN
+
+UITextSizeConstraint_14.Parent = SN
+UITextSizeConstraint_14.MaxTextSize = 72
+
+TimeText.Name = "TimeText"
+TimeText.Parent = Main
+TimeText.AnchorPoint = Vector2.new(0.5, 0.5)
+TimeText.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+TimeText.BorderSizePixel = 0
+TimeText.Position = UDim2.new(0.4987593, 0, -5.11174583, 0)
+TimeText.Size = UDim2.new(0.491315126, 0, 0.563602746, 0)
+TimeText.Font = Enum.Font.FredokaOne
+TimeText.Text = "00:00 | 00:00"
+TimeText.TextColor3 = Color3.fromRGB(162, 162, 162)
+TimeText.TextScaled = true
+TimeText.TextSize = 14.000
+TimeText.TextWrapped = true
+
+UICorner_11.Parent = TimeText
+
+UITextSizeConstraint_15.Parent = TimeText
+UITextSizeConstraint_15.MaxTextSize = 38
 
 Notif.Name = "Notif"
 Notif.Parent = ScreenGui
 Notif.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+Notif.LayoutOrder = 237238632
 Notif.Position = UDim2.new(0.00598290609, 0, 0.875, 0)
 Notif.Size = UDim2.new(0.221367523, 0, 0.107371792, 0)
 Notif.Visible = false
@@ -233,10 +366,10 @@ Ttitle.TextScaled = true
 Ttitle.TextSize = 14.000
 Ttitle.TextWrapped = true
 
-UICorner_8.Parent = Ttitle
+UICorner_12.Parent = Ttitle
 
-UITextSizeConstraint_10.Parent = Ttitle
-UITextSizeConstraint_10.MaxTextSize = 20
+UITextSizeConstraint_16.Parent = Ttitle
+UITextSizeConstraint_16.MaxTextSize = 20
 
 Description.Name = "Description"
 Description.Parent = Notif
@@ -251,19 +384,19 @@ Description.TextScaled = true
 Description.TextSize = 14.000
 Description.TextWrapped = true
 
-UICorner_9.Parent = Description
+UICorner_13.Parent = Description
 
-UITextSizeConstraint_11.Parent = Description
-UITextSizeConstraint_11.MaxTextSize = 14
+UITextSizeConstraint_17.Parent = Description
+UITextSizeConstraint_17.MaxTextSize = 14
 
-UICorner_10.Parent = Notif
+UICorner_14.Parent = Notif
 
 UIAspectRatioConstraint.Parent = ScreenGui
-UIAspectRatioConstraint.AspectRatio = 1.875
+UIAspectRatioConstraint.AspectRatio = 2.163
 
 -- Scripts:
 
-local function UVIBUTR_fake_script() -- Main.MainScript 
+local function TYUVJ_fake_script() -- Main.MainScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local playing = false
@@ -328,12 +461,17 @@ local function UVIBUTR_fake_script() -- Main.MainScript
 			script.Parent.LanguageFrame.Visible = true
 		else
 			languageopened = false
-			script.Parent.LanguageFrame.Visible = true
+			script.Parent.LanguageFrame.Visible = false
 		end
 	end)
+	
+	while wait(1) do
+		script.Parent.TimeText.Text = "Sound Duration : "..Sound.TimePosition.." | "..Sound.TimeLength
+	end
+	
 end
-coroutine.wrap(UVIBUTR_fake_script)()
-local function FVNN_fake_script() -- Main.DragScript 
+coroutine.wrap(TYUVJ_fake_script)()
+local function FRCZOU_fake_script() -- Main.DragScript 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -372,8 +510,8 @@ local function FVNN_fake_script() -- Main.DragScript
 	end)
 	
 end
-coroutine.wrap(FVNN_fake_script)()
-local function IMOO_fake_script() -- Main.Keybind 
+coroutine.wrap(FRCZOU_fake_script)()
+local function FHBF_fake_script() -- Main.Keybind 
 	local script = Instance.new('LocalScript', Main)
 
 	local frame = script.Parent
@@ -405,13 +543,13 @@ local function IMOO_fake_script() -- Main.Keybind
 	end)
 	
 end
-coroutine.wrap(IMOO_fake_script)()
-local function HHIE_fake_script() -- Main.MainScript2 
+coroutine.wrap(FHBF_fake_script)()
+local function AIUIAM_fake_script() -- Main.MainScript2 
 	local script = Instance.new('LocalScript', Main)
 
 	local customdir = ("Shadyfy/")
-	if isfolder(customdir.."") == false then
-		makefolder(customdir.."")
+	if isfolder(customdir.."SavedSongs") == false then
+		makefolder(customdir.."SavedSongs")
 	end
 	local betterisfile = function(file)
 		local suc, res = pcall(function() return readfile(file) end)
@@ -445,9 +583,26 @@ local function HHIE_fake_script() -- Main.MainScript2
 		game.Lighting.Blur:Destroy()
 		script.Parent.Parent.Main:Destroy()
 	end)
+	
 end
-coroutine.wrap(HHIE_fake_script)()
-local function XAZDPK_fake_script() -- Notif.LocalScript 
+coroutine.wrap(AIUIAM_fake_script)()
+local function RUNSWB_fake_script() -- Main.Save 
+	local script = Instance.new('LocalScript', Main)
+
+	local TextBox = script.Parent.SS.STID
+	local TextBox2 = script.Parent.SS.SN
+	local Sound = game.Workspace.MusicPlayerSound
+	local customdir = ("Shadyfy/SavedSongs")
+	
+	TextBox2.FocusLost:Connect(function()
+		if not betterisfile("Shadyfy/SavedSongs/"..TextBox2) then
+			writefile("Shadyfy/SavedSongs/"..TextBox2, "rbxassetid://"..TextBox)
+		end
+	end)  
+	
+end
+coroutine.wrap(RUNSWB_fake_script)()
+local function ARHWN_fake_script() -- Notif.LocalScript 
 	local script = Instance.new('LocalScript', Notif)
 
 	wait(1)
@@ -494,8 +649,8 @@ local function XAZDPK_fake_script() -- Notif.LocalScript
 	script.Parent.Visible = false
 	
 end
-coroutine.wrap(XAZDPK_fake_script)()
-local function KKCWAHP_fake_script() -- Notif.DragScript 
+coroutine.wrap(ARHWN_fake_script)()
+local function GBVHNBX_fake_script() -- Notif.DragScript 
 	local script = Instance.new('LocalScript', Notif)
 
 	local UIS = game:GetService('UserInputService')
@@ -534,4 +689,4 @@ local function KKCWAHP_fake_script() -- Notif.DragScript
 	end)
 	
 end
-coroutine.wrap(KKCWAHP_fake_script)()
+coroutine.wrap(GBVHNBX_fake_script)()
